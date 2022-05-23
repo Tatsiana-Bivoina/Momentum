@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="./owfont-regular.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div class="controls">
+        <p class="current-time">00:00</p>
+        <input type="range" value="0" min="0" max="100" step="0.1" class="progress">
+        <button class="sound player-icon"></button>
+        <input type="range" value="42" min="0" max="100" step="1" class="sound-range">
+        <p class="total-time">00:00</p>
+      </div>
+      <ul class="play-list">
+        <li class="play-item item-active">Aqua Caelestis
+          <button class="play player-icon"></button>
+        </li>
+        <li class="play-item">River Flows In You
+          <button class="play player-icon"></button>
+        </li>
+        <li class="play-item">Summer Wind
+          <button class="play player-icon"></button>
+        </li>
+        <li class="play-item">Ennio Morricone
+          <button class="play player-icon"></button>
+        </li>
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" id="input-city" value="Minsk"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind-speed"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter your name]"/>
+    </div>
+  </main>
+  <section class="relax-section hidden">
+    <div class="relax-container">
+      <svg class="close-icon" viewBox="0 0 352 512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+      <h2 class="relax-title">Не делайте ничего в течение 2 минут</h2>
+      <div class="try-again">Попробуйте снова</div>
+      <div class="timer"></div>
+      <div class="note">
+        <h4>Расслабьтесь и слушайте шум моря. Не двигайте мышкой.</h4>
+      </div>
+      <div class="cover hidden"></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="language">
+      <button class="english active">En</button>
+      <button class="russian">Ru</button>
+    </div>
+    <div class="relax">
+      <button class="button-relax">Время отдыха</button>
+    </div>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
